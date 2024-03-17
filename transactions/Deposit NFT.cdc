@@ -1,5 +1,5 @@
-import CryptoPoops from 0x01
-import NonFungibleToken from 0x02
+import CryptoPoops from 0x05
+import NonFungibleToken from 0x06
 
 transaction(recipient: Address) {
  // the NFTMinter will sign this transaction
@@ -10,7 +10,7 @@ transaction(recipient: Address) {
                         .borrow<&CryptoPoops.Collection{NonFungibleToken.CollectionPublic}>()
                          ?? panic("This account does not have a Collection")
   
-    publicReference.deposit(token: <- nftMinter.createNFT(name: "Lohi", favouriteDrink: "Tea", favourtieNumber: 10))
+    publicReference.deposit(token: <- nftMinter.createNFT(name: "shiva", favouriteDrink: "juice", favouriteNumber: 11))
   }
   execute {
     log("Stored newly minted NFT into Collection")
