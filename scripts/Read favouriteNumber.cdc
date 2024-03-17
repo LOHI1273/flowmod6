@@ -1,10 +1,10 @@
- import CryptoPoops from 0x01
- import NonFungibleToken from 0x02
+ import CryptoPoops from 0x05
+ import NonFungibleToken from 0x05
 
 pub fun main(account: Address, id: UInt64): Int {
   let publicReference = getAccount(account).getCapability(/public/Collection)
                                      .borrow<&CryptoPoops.Collection{CryptoPoops.MyCollectionPublic}>()
                                    ?? panic("This account does not have a Collection")
   
-  return publicReference.borrowEntireNFT(id: id).favouriteNumber
+  return publicReference.borrowAuthNFT(id: id).favouriteNumber
 }
