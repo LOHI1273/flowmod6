@@ -40,7 +40,7 @@ id: The unique identifier of the NFT.
 name: The name of the NFT.
 favouriteDrink: The favourite Drink of the NFT.
 favouriteNumber: The favourite Number of the NFT.
-#Authors
+# Authors
 Metacrafter Jacob Tucker @metacraftersio
 
 LohithakshanMp [Blockchain developer]
